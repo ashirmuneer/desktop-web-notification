@@ -31,27 +31,12 @@ class PostController extends Controller
       public function send_notification(){
 
         $pushNotifications = new PushNotifications(array(
-            "instanceId" => "cd0a708f-6550-417d-b4b8-c1ea5eb4caf8",
-            "secretKey" => "9E817824081B333C36BDC6023A5490521CAE91B112520050C9DD3E792AFDB8B7",
+            "instanceId" => "instance id will come here",
+            "secretKey" => "secret key will come here",
           ));
 
 
-        //   $publishResponse = $pushNotifications->publishToInterests(
-        //     ["donuts"],
-        //     [
-        //       "apns" => [
-        //         "aps" => [
-        //           "alert" => "Hello!",
-        //         ],
-        //       ],
-        //       "fcm" => [
-        //         "notification" => [
-        //           "title" => "Hello!",
-        //           "body" => "Hello, world!",
-        //         ],
-        //       ],
-        //     ]
-        //   );
+
 
           $publishResponse = $pushNotifications->publishToUsers(
             array("11"),

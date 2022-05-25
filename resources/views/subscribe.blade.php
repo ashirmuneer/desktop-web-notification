@@ -30,7 +30,7 @@
 
   <script>
     const beamsClient = new PusherPushNotifications.Client({
-      instanceId: 'cd0a708f-6550-417d-b4b8-c1ea5eb4caf8',
+      instanceId: 'instance id will come here',
     });
 
     const beamsTokenProvider = new PusherPushNotifications.TokenProvider({
