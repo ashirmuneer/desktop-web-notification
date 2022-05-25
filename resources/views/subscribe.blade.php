@@ -13,21 +13,7 @@
   <input type="hidden" name="user_id" id="user_id" value="1">
 
 
-  {{-- <script src="{{ asset('js/service-worker.js') }}"></script> --}}
-
-
-
-
-
-{{-- <script>
-    importScripts("https://js.pusher.com/beams/service-worker.js");
-    </script> --}}
-
 <script src="https://js.pusher.com/beams/1.0/push-notifications-cdn.js"></script>
-
-
-
-
   <script>
     const beamsClient = new PusherPushNotifications.Client({
       instanceId: 'instance id will come here',
@@ -46,23 +32,6 @@
     //   .then(() => beamsClient.addDeviceInterest('hello'))
       .then(() =>  beamsClient.setUserId("11", beamsTokenProvider))
       .catch(console.error);
-  </script>
-  <script type="text/javascript">
-
-
-
-
-
-            // const beamsTokenProvider = new PusherPushNotifications.TokenProvider({
-            // url: "YOUR_BEAMS_AUTH_URL_HERE",
-            // queryParams: {
-            //     user_id: "parameter-content", // URL query params your auth endpoint needs
-            // },
-            // headers: {
-            //     someHeader: "header-content", // Headers your auth endpoint needs
-            // },
-            // });
-
   </script>
 
 </body>
